@@ -1,0 +1,357 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #035F8B url(images/img01.png) repeat;
+	font-family: 'Abel', sans-serif;
+	font-size: 15px;
+	color: #8F8F8F;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-weight: 200;
+	color: #222222;
+}
+
+p, ol, ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p, ol {
+	line-height: 150%;
+}
+
+strong {
+}
+
+a {
+	color: #C567A9;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.border {
+}
+
+img.alignleft {
+	float: left;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+hr {
+	display: none;
+}
+
+/** WRAPPER */
+
+#wrapper {
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Header */
+
+#header-wrapper {
+	overflow: hidden;
+	height: 80px;
+}
+
+#header {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0px 0px;
+	font-family: sans-serif;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 100px;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo h1 {
+	padding: 0px 0px 0px 50px;
+	background: url(images/logo.png) no-repeat left 50%;
+	line-height: 80px;
+	letter-spacing: -2px;
+	font-size: 2.6em;
+}
+
+#logo h1 a {
+	text-decoration: none;
+	color: #CB76B2;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 650px;
+	height: 80px;
+}
+
+#menu ul {
+	
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 80px;
+	margin-left: 1px;
+	padding: 0px 20px 0px 20px;
+	line-height: 80px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #FFE1EF;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	background: #DF80C3;
+	text-decoration: none;
+	color: #FFE1EF;
+}
+
+/* Page */
+
+#page-wrapper {
+	overflow: hidden;
+	background: #F1F2E9;
+}
+
+#page {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 50px 0px;
+	color: #8F8F8F;
+}
+
+/** CONTENT */
+
+#content {
+	float: left;
+	width: 620px;
+	padding: 0px 30px 0px 0px;
+}
+
+#content h2 {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -1px;
+	font-size: 36px;
+	color: #222222;
+}
+
+#content .subtitle {
+	padding: 0px 0px 30px 0px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	color: #81AFC5;
+}
+
+
+/** SIDEBAR */
+
+#sidebar {
+	float: right;
+	width: 290px;
+	padding: 0px 30px 20px 30px;
+}
+
+#sidebar h2 {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -1px;
+	font-size: 2em;
+}
+
+/* Footer */
+
+#footer {
+	height: 30px;
+	margin: 0 auto;
+	padding: 50px 0px 15px 0px;
+	font-family: 'Abel', sans-serif;
+}
+
+#footer p {
+	margin: 0;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFE0EF;
+}
+
+#footer a {
+	color: #FFE0EF;
+}
+
+/* Three Column Footer Content */
+
+#footer-wrapper {
+	background: #FFFFFF;
+}
+
+#footer-content {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	color: #717171;
+}
+
+#footer-content a {
+}
+
+#footer-content h2 {
+	margin: 0px;
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -1px;
+	font-size: 26px;
+	color: #B5B5B5;
+}
+
+#footer-content h2 span {
+	color: #303030;
+}
+
+
+#footer-content #fbox1 {
+	float: left;
+	width: 320px;
+	margin-right: 20px;
+}
+
+#footer-content #fbox2 {
+	float: left;
+	width: 320px;
+}
+
+#footer-content #fbox3 {
+	float: right;
+	width: 320px;
+}
+
+/* Banner Style */
+
+#banner-wrapper {
+	overflow: hidden;
+	height: 345px;
+	padding: 40px 0px;
+	background: url(images/img03.png) repeat;
+}
+
+#banner {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Button Style */
+
+.button-style {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 7px 30px;
+	background: #C567A9 url(images/img01.png) repeat;
+	border-radius: 5px;
+}
+
+.button-style a {
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+/* List Style */
+
+ul.style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	padding: 20px 0px 20px 0px;
+	border-top: 1px dashed #E6E7DC;
+}
+
+ul.style1 a {
+	text-decoration: none;
+	color: #6B6B6B;
+}
+
+ul.style1 a:hover {
+	text-decoration: underline;
+	color: #6B6B6B;
+}
+
+ul.style1 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+
+
+
+
+
+
+.TITULO {
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
