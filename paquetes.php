@@ -87,32 +87,42 @@ $(document).ready(function(){
 </div>
 <p class="TITULO">Hospital</p>
 <p class="TITULO">Médica Sierra</p>
-</div> 
-<!-- div de header -->
-  <div id="footer-wrapper">
-	  <div id="footer-content" align="center">
-
-      <div id="myCarousel" class="carousel slide">
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-        <div class="active item">
-         <img src="images/pacientes.jpg" alt="" />
-         <div class="carousel-caption">
-        </div>
-      </div>
-    <div class="item"><img src="images/medicos.jpg" alt="" /></div>
-    <div class="item"><img src="images/enfermeria.jpg" alt="" /></div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
-      
-    </div>
+<div id="footer-wrapper">
+	<div id="footer-content" align="center">
+		<table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>PARTO</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2 DIAS DE ESTANCIA</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
   </div>
   <div id="footer">
-      <p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>
-  </div>
+   <p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>
+ </div>
 </body>
 </html>
