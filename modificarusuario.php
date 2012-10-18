@@ -15,17 +15,29 @@ Released   : 20120923
 
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css">
+tabla {
+	color: #000;
+}
+.tablas {
+	color: #000000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tablas {
+	color: #000;
+}
+</style>
 <head>
 
 <link href="css/bootstrap.css" rel="stylesheet" />
-<script type="text/javascript" async src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" async src="js/bootstrap.js"></script>
+<script type="text/javascript" async="" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" async="" src="js/bootstrap.js"></script>
 
  <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="img/favicon.ico">
-<title>Hospital Medica Sierra</title>
+<title>Hospital Médica Sierra</title>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
@@ -103,11 +115,46 @@ Released   : 20120923
         
 	</div>
   <p class="TITULO">Hospital</p>
-  <p class="TITULO">Médica Sierra</p>
+  <p class="TITULO">Medica Sierra</p>
 </div>
 <div id="banner-wrapper">
-	<div id="banner"><img src="images/pics01.jpg" width="1000" height="345" alt="" /></div>
+	<table width="60%"  align="center" >
+<tr>
+  <th colspan="8" align="center"></th>
+</tr>
+<tr>
+  <th align="center"><span class="tablas">ID</span></span></th>
+  <th align="center" class="tablas">NOMBRE</th>
+<th align="center" class="tablas">APELLIDO</th>
+<th align="center" class="tablas">PUESTO</th>
+<th align="center" class="tablas">USUARIO</th>
+<th align="center" class="tablas">BORRAR</th>
+<th align="center" class="tablas">EDITAR</th>
+</tr>
+
+
+<span class="tablas">
+<?php
+		$connect= mysql_connect("localhost","root","")or die("ERROR EN CONEXION");
+		mysql_select_db("paginahms");
+		
+		
+	$query="SELECT * FROM login";
+	$resultado=mysql_query($query) or die(mysql_error());
+
+
+		if ($resultado!=0)
+		{
+		while ($consulta=mysql_fetch_array($resultado))
+		{
+		extract($consulta);
+		echo "<tr align='center'><td align='center'>".$consulta[0]."</td><td align='center'>".$consulta[1]."<td align='center'>".$consulta[2]."<td align='center'>".$consulta[3]."</td><td align='center'>".$consulta[4]."<td align='center'>"."<a href='eliminarusuario.php?id=$consulta[0]'><img src='images/borrar.gif'>"."</td><td align='center'>"."<a href='modificarusuario1.php?id=$consulta[0]&&nombre=$consulta[1]&&apellido=$consulta[2]&&puesto=$consulta[3]&&usuario=$consulta[4]&&pass=$consulta[5]'><img src='images/editar.png'>"."<td align='center'></td></tr>\n";  
+	}
+}else
+	 echo "<tr><td align='center'>No existen Datos..</td></tr>";	
+?>
 </div>
+</span>
 
 <div id="footer">
 	<p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>

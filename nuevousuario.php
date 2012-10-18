@@ -1,3 +1,6 @@
+<?PHP
+include ('ingreso.php');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
@@ -47,15 +50,14 @@ Released   : 20120923
         <div id="navbar-example" class="navbar navbar-static menu">
               <div class="">
                 <div class="container" style="width: auto;">
-                  <a class="brand" href="index.php">Inicio</a>
+                  
                   <ul class="nav" role="navigation">
                     <li class="dropdown">
-                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Nosotros<b class="caret"></b></a> 
+                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Noticias<b class="caret"></b></a> 
                        <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="historia.php">Historia&nbsp&nbsp&nbsp&nbsp&nbsp </a></li>
-                        <li><a tabindex="-1" href="ubicacion.php">Ubicación</a></li>
-                        <li><a tabindex="-1" href="directoriomedico.php">Directorio medico</a></li>
-                        <li><a tabindex="-1" href="directorioespecialidad.php">Directorio por especialidad</a></li>
+                        <li><a tabindex="-1" href="nuevanoticia.php">Nueva </a></li>
+                        <li><a tabindex="-1" href="eliminarnoticia.php">Eliminar</a></li>
+                        <li><a tabindex="-1" href="modificarnoticia.php">Modificar</a></li>
                         <li class="divider"></li>
                       </ul>
                     </li>
@@ -63,11 +65,11 @@ Released   : 20120923
             
             <ul class="nav" role="navigation">
                     <li class="dropdown">
-                      <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Pacientes<b class="caret"></b></a>
+                      <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Directorio Medico<b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="servicios.php">Servicios</a></li>
-                        <li><a tabindex="-1" href="pacientes.php">Derechos</a></li>
-                        <li><a tabindex="-1" href="paquetes.php">Presupuestos</a></li>
+                        <li><a tabindex="-1" href="nuevodirectoriomedico.php">Nuevo</a></li>
+                        <li><a tabindex="-1" href="eliminardirectoriomedico.php">Eliminar</a></li>
+                        <li><a tabindex="-1" href="modificardirectoriomedico.php">Modificar</a></li>
                         <li class="divider"></li>
                       </ul>
                     </li>
@@ -75,17 +77,17 @@ Released   : 20120923
             
             <ul class="nav" role="navigation">
                     <li class="dropdown">
-                      <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Personal<b class="caret"></b></a>
+                      <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Usuarios<b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="medicos.php">Medicos</a></li>
-                        <li><a tabindex="-1" href="enfermeria.php">Emfermería</a></li>
-                        <li><a tabindex="-1" href="ingresa.php">Ingresa</a></li>
+                        <li><a tabindex="-1" href="nuevousuario.php">Nuevo</a></li>
+                        <li><a tabindex="-1" href="eliminarusuario.php">Eliminar</a></li>
+                        <li><a tabindex="-1" href="modificarusuario.php">Modificar</a></li>
                         <li class="divider"></li>
                       </ul>
                     </li>
                   </ul>
             
-            <a class="brand" href="contactanos.php">Contactanos</a>
+            <a class="brand" href="salir.php">Salir</a>
             
             
             
@@ -116,7 +118,7 @@ Released   : 20120923
                                     <label>Puesto<input type="text" name="puesto" id="puesto" /></label>
                                     <label>Usuario<input type="text" name="usuario" id="usuario" /></label>
                                		<label>Contraseña<input type="password" name="id" id="id"/></label>
-                               		<label>Confirmar Contraseña<input type="password2" name="id" id="id"/></label>                                    <input type="submit" name="registrar" id="registrar" value="Registrar"/>
+                               		<input type="submit" name="registrar" id="registrar" value="Registrar"/>
                                   
                               </form>
                             

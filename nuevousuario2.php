@@ -1,5 +1,5 @@
 <?PHP
-//include ('ingreso.php');
+include ('ingreso.php');
 ?>
 <html>
 <body>
@@ -8,7 +8,8 @@ $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $puesto=$_POST['puesto'];
 $usuario=$_POST['usuario'];
-$contraseña=$_POST['contraseña'];
+$clave=$_POST['id'];
+$encriptado=md5($clave);
 $connect=mysql_connect("localhost","root","")or die("no se conecto");
 mysql_select_db("paginahms");
 
@@ -16,7 +17,7 @@ mysql_select_db("paginahms");
 
 
 	$query="SELECT * FROM login";
-	$query="insert into login values ('$nombre','$apellido','$puesto','$usuario','$encriptado')";
+	$query="insert into login values ('','$nombre','$apellido','$puesto','$usuario','$encriptado')";
 	$resultado=mysql_query($query) or die(mysql_error());
 
 
@@ -35,7 +36,7 @@ mysql_select_db("paginahms");
 
 ?>
 <script language="javascript"> alert("REGISTRO COMPLETO");
-	document.location.href="insertarmateria.php";
+	document.location.href="inicio.php";
 	</script>
 </body>
 </html>

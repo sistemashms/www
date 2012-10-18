@@ -1,7 +1,6 @@
 <?PHP
 include ('ingreso.php');
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
@@ -18,14 +17,14 @@ Released   : 20120923
 <head>
 
 <link href="css/bootstrap.css" rel="stylesheet" />
-<script type="text/javascript" async src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" async src="js/bootstrap.js"></script>
+<script type="text/javascript" async="" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" async="" src="js/bootstrap.js"></script>
 
  <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="img/favicon.ico">
-<title>Hospital Medica Sierra</title>
+<title>Hospital Médica Sierra</title>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
@@ -105,10 +104,30 @@ Released   : 20120923
   <p class="TITULO">Hospital</p>
   <p class="TITULO">Médica Sierra</p>
 </div>
-<div id="banner-wrapper">
-	<div id="banner"><img src="images/pics01.jpg" width="1000" height="345" alt="" /></div>
-</div>
 
+<div id="footer-wrapper">
+	<div id="footer-content" align="center">
+		<?php
+		$id=$_REQUEST['id'];
+	$nombre=$_REQUEST['nombre'];
+	$apellido=$_REQUEST['apellido'];
+	$puesto=$_REQUEST['puesto'];
+	$usuario=$_REQUEST['usuario'];
+	$pass=$_REQUEST['pass'];
+?>
+                              <form id="form1" method="post" action="modificarusuario2.php">
+                                
+                                    <label>Nombre<input type="text" name="nombre" id="nombre" value="<?php echo $nombre;?>"/></label>
+                                    <label>Apellido<input type="text" name="apellido" id="apellido" value="<?php echo $apellido;?>"/></label>
+                                    <label>Puesto<input type="text" name="puesto" id="puesto" value="<?php echo $puesto;?>"/></label>
+                                    <label>Usuario<input type="text" name="usuario" id="usuario" value="<?php echo $usuario;?>"/></label>
+                               		<label>Contraseña<input type="password" name="pass" id="pass"/></label>
+                               		<input type="submit" name="registrar" id="registrar" value="Guardar Cambios"/>
+                                  
+                              </form>
+                            
+	</div>
+</div>
 <div id="footer">
 	<p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>
 </div>
