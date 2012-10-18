@@ -107,21 +107,16 @@ Released   : 20120923
 
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
-		<?php
-	$nombre=$_REQUEST['nombre'];
-	$apellido=$_REQUEST['apellido'];
-	$puesto=$_REQUEST['puesto'];
-	$usuario=$_REQUEST['usuario'];
-	$pass=$_REQUEST['pass'];
-?>
-                              <form id="form1" method="post" action="modificarusuario2.php">
+		
+        
+      
+                              <form id="form1" method="post" action="nuevanoticia2.php">
                                 
-                                    <label>Nombre<input type="text" name="nombre" id="nombre" value="<?php echo $nombre;?>"/></label>
-                                    <label>Apellido<input type="text" name="apellido" id="apellido" value="<?php echo $apellido;?>"/></label>
-                                    <label>Puesto<input type="text" name="puesto" id="puesto" value="<?php echo $puesto;?>"/></label>
-                                    <label>Usuario<input type="text" name="usuario" id="usuario" value="<?php echo $usuario;?>"/></label>
-                               		<label>Contraseña<input type="password" name="pass" id="pass"/></label>
-                               		<input type="submit" name="registrar" id="registrar" value="Guardar Cambios"/>
+                                    <label>Titulo de la noticia<input type="text" name="titulo" id="titulo" /></label>
+                                    <label>Redacción corta<input type="text" name="corta" id="corta" /></label>
+                                    <label>Redacción larga<input type="text" name="larga" id="larga" /></label>
+                                    <input type="file" name="imagen" id="imagen" value="Seleccionar Imagen"/>
+                                    <input type="submit" name="guardar" id="guardar" value="Guardar Noticia"/>
                                   
                               </form>
                             

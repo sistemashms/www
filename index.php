@@ -115,17 +115,17 @@ Released   : 20120923
 		<div id="fbox1">
 			<p><img class="imagennoticias" src="images/noticias/noticia1.gif" width="320" height="240" alt="" /></p>
 			<p>Recolección de datos del SISSI</p>
-			<p class="button-style"><a href="noticia1.html">Ver mas...</a></p>
+			<p class="button-style"><a href="noticia1.php">Ver mas...</a></p>
 		</div>
 		<div id="fbox2">
 			<p><img src="images/noticias/noticia2.png" width="320" height="240" alt="" /></p>
 			<p>Boletin Interno Julio-Septiembre 2012</p>
-			<p class="button-style"><a href="noticia2.html">Ver mas...</a></p>
+			<p class="button-style"><a href="noticia2.php">Ver mas...</a></p>
 		</div>
 		<div id="fbox3">
 			<p><img src="images/noticias/noticia3.jpg" width="320" height="240" alt="" /></p>
 			<p>Remodelaciones en curso...</p>
-			<p class="button-style"><a href="noticia3.html">Ver mas...</a></p>
+			<p class="button-style"><a href="noticia3.php">Ver mas...</a></p>
 		</div>
 	</div>
 </div>

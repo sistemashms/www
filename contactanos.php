@@ -113,8 +113,8 @@ Released   : 20120923
                                 
                                     <label>Nombre    <input type="text" name="nombre" id="nombre" /></label>
                                     <label>E-mail    <input type="email" name="email" id="email"/></label>
-                                    <label>Teléfono    <input type="text" name="telefono" id="telefono"/></label>
-                               		<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                                    <label>Asunto    <input type="text" name="asunto" id="asunto"/></label>
+                               		<textarea name="comentarios" rows="10" cols="100">Escribe aquí tus comentarios</textarea>
                                     <br />
                            			<p class="button-style"><a href="">Enviar</a></p>
                                
