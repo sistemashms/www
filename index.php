@@ -123,7 +123,7 @@ Released   : 20120923
 			<p class="button-style"><a href="noticia2.php">Ver mas...</a></p>
 		</div>
 		<div id="fbox3">
-			<p><img src="images/noticias/noticia3.jpg" width="320" height="240" alt="" /></p>
+			<p><img src="images/noticias/noticia3.png" width="320" height="240" alt="" /></p>
 			<p>Remodelaciones en curso...</p>
 			<p class="button-style"><a href="noticia3.php">Ver mas...</a></p>
 		</div>

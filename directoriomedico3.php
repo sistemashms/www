@@ -1,6 +1,3 @@
-<?PHP
-include ('ingreso.php');
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
@@ -51,8 +48,7 @@ Released   : 20120923
               <div class="">
                 <div class="container" style="width: auto;">
                   <a class="brand" href="inicio.php">Inicio</a>
-                  <ul class="nav" role="navigation">
-                    
+                  
             <ul class="nav" role="navigation">
                     <li class="dropdown">
                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Directorio Medico<b class="caret"></b></a>
@@ -98,18 +94,29 @@ Released   : 20120923
 
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
-		
-                              <form id="form1" method="post" action="nuevousuario2.php">
-                                
-                                    <label>Nombre<input type="text" name="nombre" id="nombre" /></label>
-                                    <label>Apellido<input type="text" name="apellido" id="apellido" /></label>
-                                    <label>Puesto<input type="text" name="puesto" id="puesto" /></label>
-                                    <label>Usuario<input type="text" name="usuario" id="usuario" /></label>
-                               		<label>Contraseña<input type="password" name="id" id="id"/></label>
-                               		<input type="submit" name="registrar" id="registrar" value="Registrar"/>
-                                  
+		<?php
+		$id=$_REQUEST['id'];
+	$titulo=$_REQUEST['titulo'];
+	$nombre=$_REQUEST['nombre'];
+	$apellido=$_REQUEST['apellido'];
+	$especialidad=$_REQUEST['especialidad'];
+	$telefono=$_REQUEST['telefono'];
+	$email=$_REQUEST['email'];
+	$descripcion=$_REQUEST['descripcion'];
+?>
+
+
+<form id="form1">
+                              	<label>Titulo<input type="text" name="titulo" disabled="disabled" id="titulo" value="<?php echo $titulo;?>"/></label>
+                                    <label>Nombre<input type="text" name="nombre" disabled="disabled" id="nombre" value="<?php echo $nombre;?>"/></label>
+                                    <label>Apellido<input type="text" name="apellido" disabled="disabled" id="apellido" value="<?php echo $apellido;?>"/></label>
+                                    <label>Especialidad<input type="text" name="especialidad" disabled="disabled" id="especialidad" value="<?php echo $especialidad;?>"/></label>
+                                    <label>Teléfono<input type="text" name="telefono" disabled="disabled" id="telefono" value="<?php echo $telefono;?>"/></label>
+                               		<label>Email<input type="text" name="email" disabled="disabled" id="email" value="<?php echo $email;?>"/></label>
+                                    <label>Descripción<textarea name="descripcion" disabled="disabled" id="descripcion" rows="10" cols="100"><?php echo $descripcion;?></textarea></label>
+                               		
                               </form>
-                            
+                                                          
 	</div>
 </div>
 <div id="footer">

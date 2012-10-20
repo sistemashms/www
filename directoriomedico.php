@@ -109,13 +109,13 @@ Released   : 20120923
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
 		
-                              <form id="form1" method="post" action="">
+                              <form id="form1" method="post" action="directoriomedico2.php">
                                 
                                     <label>Nombre del medico, Apellido del medico
                                     <br />
                                     <input type="text" name="nombre" id="nombre"/></label>
                                     <br />
-                           			<p class="button-style"><a href="">Buscar</a></p>
+                           			<input type="submit" name="buscar" id="buscar" value="Buscar"/>
                                
                               </form>
                             

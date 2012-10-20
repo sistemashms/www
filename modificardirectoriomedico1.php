@@ -51,17 +51,7 @@ Released   : 20120923
               <div class="">
                 <div class="container" style="width: auto;">
                   <a class="brand" href="inicio.php">Inicio</a>
-                  <ul class="nav" role="navigation">
-                    <li class="dropdown">
-                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Noticias<b class="caret"></b></a> 
-                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="nuevanoticia.php">Nueva </a></li>
-                        <li><a tabindex="-1" href="modificarnoticia.php">Modificar o eliminar</a></li>
-                        <li class="divider"></li>
-                      </ul>
-                    </li>
-                  </ul>
-            
+                  
             <ul class="nav" role="navigation">
                     <li class="dropdown">
                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Directorio Medico<b class="caret"></b></a>
@@ -107,19 +97,31 @@ Released   : 20120923
 
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
-		
-        
-      
-                              <form id="form1" method="post" action="nuevanoticia2.php">
-                                
-                                    <label>Titulo de la noticia<input type="text" name="titulo" id="titulo" /></label>
-                                    <label>Redacción corta<input type="text" name="corta" id="corta" /></label>
-                                    <label>Redacción larga<input type="text" name="larga" id="larga" /></label>
-                                    <input type="file" name="imagen" id="imagen" value="Seleccionar Imagen"/>
-                                    <input type="submit" name="guardar" id="guardar" value="Guardar Noticia"/>
+		<?php
+		$id=$_REQUEST['id'];
+	$titulo=$_REQUEST['titulo'];
+	$nombre=$_REQUEST['nombre'];
+	$apellido=$_REQUEST['apellido'];
+	$especialidad=$_REQUEST['especialidad'];
+	$telefono=$_REQUEST['telefono'];
+	$email=$_REQUEST['email'];
+	$descripcion=$_REQUEST['descripcion'];
+?>
+
+
+<form id="form1" method="post" action="modificardirectoriomedico2.php">
+                              <label>ID<input type="text" name="id" id="id" value="<?php echo $id;?>"/></label>
+                                	<label>Titulo<input type="text" name="titulo" id="titulo" value="<?php echo $titulo;?>"/></label>
+                                    <label>Nombre<input type="text" name="nombre" id="nombre" value="<?php echo $nombre;?>"/></label>
+                                    <label>Apellido<input type="text" name="apellido" id="apellido" value="<?php echo $apellido;?>"/></label>
+                                    <label>Especialidad<input type="text" name="especialidad" id="especialidad" value="<?php echo $especialidad;?>"/></label>
+                                    <label>Teléfono<input type="text" name="telefono" id="telefono" value="<?php echo $telefono;?>"/></label>
+                               		<label>Email<input type="text" name="email" id="email" value="<?php echo $email;?>"/></label>
+                                    <label>Descripción<textarea name="descripcion" id="descripcion" rows="10" cols="100"><?php echo $descripcion;?></textarea></label>
+                               		<input type="submit" name="guardar" id="guardar" value="Guardar Cambios"/>
                                   
                               </form>
-                            
+                                                          
 	</div>
 </div>
 <div id="footer">

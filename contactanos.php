@@ -109,14 +109,14 @@ Released   : 20120923
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
 		
-                              <form id="form1" method="post" action="">
+                              <form id="form1" method="post" action="contactanos2.php">
                                 
                                     <label>Nombre    <input type="text" name="nombre" id="nombre" /></label>
                                     <label>E-mail    <input type="email" name="email" id="email"/></label>
                                     <label>Asunto    <input type="text" name="asunto" id="asunto"/></label>
-                               		<textarea name="comentarios" rows="10" cols="100">Escribe aquí tus comentarios</textarea>
+                               		<textarea name="comentarios" id="comentarios" rows="10" placeholder="Escribe aqui tus comentarios" cols="100"></textarea>
                                     <br />
-                           			<p class="button-style"><a href="">Enviar</a></p>
+                           			<label>Asunto    <input type="submit" name="enviar" id="enviar"/></label>
                                
                               </form>
                             

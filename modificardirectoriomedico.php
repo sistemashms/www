@@ -1,6 +1,7 @@
 <?PHP
 include ('ingreso.php');
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
@@ -14,6 +15,18 @@ Released   : 20120923
 
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css">
+tabla {
+	color: #000;
+}
+.tablas {
+	color: #000000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tablas {
+	color: #000;
+}
+</style>
 <head>
 
 <link href="css/bootstrap.css" rel="stylesheet" />
@@ -51,8 +64,7 @@ Released   : 20120923
               <div class="">
                 <div class="container" style="width: auto;">
                   <a class="brand" href="inicio.php">Inicio</a>
-                  <ul class="nav" role="navigation">
-                    
+                  
             <ul class="nav" role="navigation">
                     <li class="dropdown">
                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Directorio Medico<b class="caret"></b></a>
@@ -93,25 +105,50 @@ Released   : 20120923
         
 	</div>
   <p class="TITULO">Hospital</p>
-  <p class="TITULO">Médica Sierra</p>
+  <p class="TITULO">Medica Sierra</p>
 </div>
+<div id="banner-wrapper">
+	<table width="60%"  align="center" >
+<tr>
+  <th colspan="8" align="center"></th>
+</tr>
+<tr>
+  <th align="center"><span class="tablas">ID</span></span></th>
+    <th align="center" class="tablas">TITULO</th>
+  <th align="center" class="tablas">NOMBRE</th>
+<th align="center" class="tablas">APELLIDO</th>
+<th align="center" class="tablas">ESPECIALIDAD</th>
+<th align="center" class="tablas">TELEFONO</th>
+<th align="center" class="tablas">EMAIL</th>
+<th align="center" class="tablas">DESCRIPCION</th>
+<th align="center" class="tablas">BORRAR</th>
+<th align="center" class="tablas">EDITAR</th>
+</tr>
 
-<div id="footer-wrapper">
-	<div id="footer-content" align="center">
+
+<span class="tablas">
+<?php
+		$connect= mysql_connect("localhost","root","")or die("ERROR EN CONEXION");
+		mysql_select_db("paginahms");
 		
-                              <form id="form1" method="post" action="nuevousuario2.php">
-                                
-                                    <label>Nombre<input type="text" name="nombre" id="nombre" /></label>
-                                    <label>Apellido<input type="text" name="apellido" id="apellido" /></label>
-                                    <label>Puesto<input type="text" name="puesto" id="puesto" /></label>
-                                    <label>Usuario<input type="text" name="usuario" id="usuario" /></label>
-                               		<label>Contraseña<input type="password" name="id" id="id"/></label>
-                               		<input type="submit" name="registrar" id="registrar" value="Registrar"/>
-                                  
-                              </form>
-                            
-	</div>
+		
+	$query="SELECT * FROM directoriomedico";
+	$resultado=mysql_query($query) or die(mysql_error());
+
+
+		if ($resultado!=0)
+		{
+		while ($consulta=mysql_fetch_array($resultado))
+		{
+		extract($consulta);
+		echo "<tr align='center'><td align='center'>".$consulta[0]."</td><td align='center'>".$consulta[1]."<td align='center'>".$consulta[2]."<td align='center'>".$consulta[3]."</td><td align='center'>".$consulta[4]."</td><td align='center'>".$consulta[5]."</td><td align='center'>".$consulta[6]."</td><td align='center'>".$consulta[7]."<td align='center'>"."<a href='eliminardirectoriomedico.php?id=$consulta[0]'><img src='images/borrar.gif'>"."</td><td align='center'>"."<a href='modificardirectoriomedico1.php?id=$consulta[0]&&titulo=$consulta[1]&&nombre=$consulta[2]&&apellido=$consulta[3]&&especialidad=$consulta[4]&&telefono=$consulta[5]&&email=$consulta[6]&&descripcion=$consulta[7]'><img src='images/editar.png'>"."<td align='center'></td></tr>\n";  
+	}
+}else
+	 echo "<tr><td align='center'>No existen Datos..</td></tr>";	
+?>
 </div>
+</span>
+
 <div id="footer">
 	<p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>
 </div>

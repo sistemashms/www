@@ -51,16 +51,7 @@ Released   : 20120923
               <div class="">
                 <div class="container" style="width: auto;">
                   <a class="brand" href="inicio.php">Inicio</a>
-                  <ul class="nav" role="navigation">
-                    <li class="dropdown">
-                       <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Noticias<b class="caret"></b></a> 
-                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="nuevanoticia.php">Nueva </a></li>
-                        <li><a tabindex="-1" href="modificarnoticia.php">Modificar o eliminar</a></li>
-                        <li class="divider"></li>
-                      </ul>
-                    </li>
-                  </ul>
+                 
             
             <ul class="nav" role="navigation">
                     <li class="dropdown">
@@ -108,13 +99,15 @@ Released   : 20120923
 <div id="footer-wrapper">
 	<div id="footer-content" align="center">
 		
-                              <form id="form1" method="post" action="nuevousuario2.php">
-                                
+                              <form id="form1" method="post" action="nuevodirectoriomedico2.php">
+                              
+                                	<label>Titulo<input type="text" name="titulo" id="titulo" /></label>
                                     <label>Nombre<input type="text" name="nombre" id="nombre" /></label>
                                     <label>Apellido<input type="text" name="apellido" id="apellido" /></label>
-                                    <label>Puesto<input type="text" name="puesto" id="puesto" /></label>
-                                    <label>Usuario<input type="text" name="usuario" id="usuario" /></label>
-                               		<label>Contraseña<input type="password" name="id" id="id"/></label>
+                                    <label>Especialidad<input type="text" name="especialidad" id="especialidad" /></label>
+                                    <label>Teléfono<input type="text" name="telefono" id="telefono" /></label>
+                               		<label>Email<input type="text" name="email" id="email"/></label>
+                                    <label>Descripción<textarea name="descripcion" id="descripcion" rows="10" cols="100"></textarea></label>
                                		<input type="submit" name="registrar" id="registrar" value="Registrar"/>
                                   
                               </form>
