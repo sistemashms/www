@@ -111,10 +111,10 @@ Released   : 20120923
 	<div id="footer-content">
 		<h2><span>Remodelación en curso</span>...</h2>
 		<div id="fbox1">
-			<p><img src="images/noticias/noticia3.jpg" width="320" height="240" alt="" /></p>
+			<p><img src="images/noticias/noticia3.png" width="320" height="240" alt="" /></p>
 		</div>
 		<div align="justify">
-        El Hospital Médica Sierra se encuentra en remodelación para brindar un ambiente y una estadia más comoda tanto para pacientes, familiares, visitas y personal que labora en nuestro hospital, siendo nuestro objetivo seguir siendo la mejor opción médico-hospitalaria de la región.
+        El Hospital Médica Sierra se encuentra en remodelación para brindar un ambiente y una estadía más cómoda tanto para pacientes, familiares, visitas y personal que labora en nuestro hospital, siendo nuestro objetivo seguir siendo la mejor opción médico-hospitalaria de la región.
 			</div>
 	</div>
 </div>

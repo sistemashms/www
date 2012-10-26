@@ -11,8 +11,7 @@ $especialidad=$_POST['especialidad'];
 $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $descripcion=$_POST['descripcion'];
-$connect=mysql_connect("localhost","root","")or die("no se conecto");
-mysql_select_db("paginahms");
+include("master_db.php");
 
 	$query="SELECT * FROM directoriomedico";
 	$query="insert into directoriomedico values ('','$titulo','$nombre','$apellido','$especialidad','$telefono','$email','$descripcion')";

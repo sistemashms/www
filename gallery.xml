@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gallery frameColor="0xFFFFFF" frameWidth="15" imagePadding="20" displayTime="6" enableRightClickOpen="true">
+<image>
+   <url>images/hospital/1.png</url>
+   <caption>Hospital Médica Sierra </caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/consultorio.png</url>
+   <caption>Consultorio</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/cuarto.png</url>
+   <caption>Cuarto</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/salaespera.png</url>
+   <caption>Sala de espera</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/cunas.png</url>
+   <caption>Cuneros</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/salageneral.png</url>
+   <caption>Sala general</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/cardiologia1.png</url>
+   <caption>Cardiología</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/cardiologia.png</url>
+   <caption>Cardiología</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/laboratorio.png</url>
+   <caption>Laboratorio</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/rayosx.png</url>
+   <caption>Rayos X</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/quirofano.png</url>
+   <caption>Quirofano</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+<image>
+   <url>images/hospital/recuperacion.png</url>
+   <caption>Recuperación</caption>
+   <width>700</width>
+   <height>465</height>
+</image>
+</gallery>

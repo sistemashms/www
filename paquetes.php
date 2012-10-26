@@ -1,128 +1,135 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Name       : LoveRomance 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20120923
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <script type="text/javascript" async="" src="js/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" async="" src="js/bootstrap.js"></script>
-
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Hospital Médica Sierra</title>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
-  <link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-<script type="text/javascript">
-$(document).ready(function(){
- $('.carousel').carousel({
-   interval: 5000
- })
-});
-</script>
-
-</head>
-<body>
-  <div id="header">
-   <div id="logo">
-    <img src="images/logo.png" alt="" width="110" height="110" />
-  </div>
-  <div id="menu">
-    <div id="navbar-example" class="navbar navbar-static menu">
-      <div class="">
-        <div class="container" style="width: auto;">
-          <a class="brand" href="index.php">Inicio</a>
-          <ul class="nav" role="navigation">
-            <li class="dropdown">
-             <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Nosotros<b class="caret"></b></a> 
-             <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-              <li><a tabindex="-1" href="historia.php">Historia&nbsp&nbsp&nbsp&nbsp&nbsp </a></li>
-              <li><a tabindex="-1" href="ubicacion.php">Ubicación</a></li>
-              <li><a tabindex="-1" href="directoriomedico.php">Directorio medico</a></li>
-              <li><a tabindex="-1" href="directorioespecialidad.php">Directorio por especialidad</a></li>
-              <li class="divider"></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav" role="navigation">
-          <li class="dropdown">
-            <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Pacientes<b class="caret"></b></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-              <li><a tabindex="-1" href="servicios.php">Servicios</a></li>
-              <li><a tabindex="-1" href="pacientes.php">Derechos</a></li>
-              <li><a tabindex="-1" href="paquetes.php">Presupuestos</a></li>
-              <li class="divider"></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav" role="navigation">
-          <li class="dropdown">
-            <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown">Personal<b class="caret"></b></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-              <li><a tabindex="-1" href="medicos.php">Medicos</a></li>
-              <li><a tabindex="-1" href="enfermeria.php">Emfermería</a></li>
-              <li><a tabindex="-1" href="ingresa.php">Ingresa</a></li>
-              <li class="divider"></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="brand" href="contactanos.php">Contactanos</a>
-      </div>
-    </div>
-  </div>
-</div>
-<p class="TITULO">Hospital</p>
-<p class="TITULO">Médica Sierra</p>
-</div>
-
-<div id="footer-wrapper">
-	<div id="footer-content" align="center">
+<?php
+	include("master_encabezado1.php");
+	include("master_menu1.php");
+	include("master_encabezado2.php");
+	include("master_segundocontenido1.php");
+?>
+<div align="center">
+<b>
+Para una mayor información a pacientes y familiares, el Hospital Médica Sierra pone a su disposición a través de su sitio web, información sobre paquetes y presupuestos que le puedan ser de utilidad, recordándole que estamos a su disposición para resolver dudas en el teléfono (625) 58 1 36 00.
+</b>
 		<table class="table table-hover">
         <thead>
           <tr>
-            <th>#</th>
-            <th>PARTO</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>DESCRIPCION</th>
+            <th>PRECIO</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
+            <td colspan="2"><b>PARTO Y SALPINGOCLASIA</b></td>
+          </tr>
+          <tr>
+            <td>AMBULATORIO</td>
+            <td>$ 4,070.00</td>
+          </tr>
+          <tr>
             <td>1 DIA DE ESTANCIA</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>$ 5,170.00</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>2 DIAS DE ESTANCIA</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>2 DIA DE ESTANCIA</td>
+            <td>$ 6,325.00</td>
           </tr>
           <tr>
-            <td>3</td>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td colspan="2"><b>CESAREA</b></td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 6,930.00</td>
+          </tr>
+          <tr>
+            <td>2 DIA DE ESTANCIA</td>
+            <td>$ 8,085.00</td>
+          </tr>
+          <tr>
+            <td>3 DIA DE ESTANCIA</td>
+            <td>$ 9,240.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>HISTERECTOMIA</b></td>
+          </tr>
+          <tr>
+            <td>2 DIA DE ESTANCIA</td>
+            <td>$ 9,790.00</td>
+          </tr>
+          <tr>
+            <td>3 DIA DE ESTANCIA</td>
+            <td>$ 11,550.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>LEGRADO</b></td>
+          </tr>
+          <tr>
+            <td>AMBULATORIO</td>
+            <td>$ 2,970.00</td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 3,630.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>BIOPSIA</b></td>
+          </tr>
+          <tr>
+            <td>AMBULATORIO</td>
+            <td>$ 2,970.00</td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 3,630.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>AMIGDALECTOMIA</b></td>
+          </tr>
+          <tr>
+            <td>AMBULATORIO</td>
+            <td>$ 4,389.00</td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 5,544.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>APENDICECTOMIA</b></td>
+          </tr>
+          <tr>
+            <td>AMBULATORIO</td>
+            <td>$ 6,930.00</td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 8,085.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>COLICISTECTOMIA</b></td>
+          </tr>
+          <tr>
+            <td>1 DIA DE ESTANCIA</td>
+            <td>$ 9,100.00</td>
+          </tr>
+          <tr>
+            <td>2 DIA DE ESTANCIA</td>
+            <td>$ 12,045.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>COLECISTECTOMIA LAPAROSCOPIA</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>$ 8,085.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>CIRIGUIA AMBULATORIA</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>$ 1,980.00</td>
           </tr>
         </tbody>
       </table>
-  </div>
-  <div id="footer">
-   <p>Copyright (c) 2012 HospitalMedicaSierra.com. Todos los derechos reservados.</p>
- </div>
-</body>
-</html>
+</div>
+  <?php
+	include("master_segundocontenido2.php");
+	include("master_piepagina.php");
+?>

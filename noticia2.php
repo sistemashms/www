@@ -109,13 +109,16 @@ Released   : 20120923
 
 <div id="footer-wrapper">
 	<div id="footer-content">
-		<h2><span>Boletin Interno</span> Julio-Septiembre 2012</h2>
+		<h2><span>Remodelaión del sitio web del </span> Hospital Médica Sierra</h2>
 		<div id="fbox1">
 			<p><img src="images/noticias/noticia2.png" width="320" height="240" alt="" /></p>
 		</div>
 		<div align="justify">
-        El Boletin Interno Julio-Septiembre 2012 se encuentra en costrucción y en los proximos días será entregado al personal.
-			</div>
+        El Sitio Web del Hospital Médica Sierra se encuentra en remodelación para brindar un mejor aspecto y accesibilidad de datos a toda aquella persona que lo requiera, así como para el personal que labora en nuestro hospital, en los próximos días habrá cambios en el sitio web, empezando a notarse desde el día viernes 19 de octubre del 2012.
+<br>
+<br>
+ATTE: Departamento de Sistemas
+		</div>
 	</div>
 </div>
 <div id="footer">

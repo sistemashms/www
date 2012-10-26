@@ -114,7 +114,7 @@ Released   : 20120923
 			<p><img src="images/noticias/noticia1.gif" width="320" height="240" alt="" /></p>
 		</div>
 		<div align="justify">
-        El Sistema Integral de Salud del SIerra se encuentra en su etapa de recolección de datos, la cual es muy importante ya que de ella depende que la información ingresada al sistema sea correcta y funcional, por lo que para lograr concluir esta etapa de manera satisfactoria es muy importante el apoyo de toda la familia Hospital Médica Sierra
+        El Sistema Integral de Salud del Sierra se encuentra en su etapa de recolección de datos, la cual es muy importante ya que de ella depende que la información ingresada al sistema sea correcta y funcional, por lo que para lograr concluir esta etapa de manera satisfactoria es muy importante el apoyo de toda la familia Hospital Médica Sierra
 			</div>
 	</div>
 </div>

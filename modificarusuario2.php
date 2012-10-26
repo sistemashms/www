@@ -13,8 +13,7 @@ include ('ingreso.php');
 
 	
 	
-	$connect=mysql_connect("localhost","root","") or die ("ERROR EN CONEXION");
-	mysql_select_db("paginahms");
+	include("master_db.php");
 	
 	$query="UPDATE login SET nombre='$nombre', apellido='$apellido', puesto='$puesto', pass_administrador='$encriptado' WHERE usuario_administrador LIKE '$usuario'";
 	$resultado=mysql_query($query) or die(mysql_error());

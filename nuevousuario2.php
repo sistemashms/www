@@ -1,42 +1,41 @@
 <?PHP
-include ('ingreso.php');
-?>
-<html>
-<body>
-  <?php
+        include ('ingreso.php');
+	include("master_encabezado1.php");
+	include("master_menu2.php");
+	include("master_encabezado2.php");
+	include("master_segundocontenido1.php");
+
+
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $puesto=$_POST['puesto'];
 $usuario=$_POST['usuario'];
 $clave=$_POST['id'];
 $encriptado=md5($clave);
-$connect=mysql_connect("localhost","root","")or die("no se conecto");
-mysql_select_db("paginahms");
+
+
+
+include("master_db.php");
 
 
 
 
 	$query="SELECT * FROM login";
-	$query="insert into login values ('','$nombre','$apellido','$puesto','$usuario','$encriptado')";
+	$query="insert into login values ('','$nombre','$apellido','$puesto','$usuario','$encriptado',0)";
 	$resultado=mysql_query($query) or die(mysql_error());
 
-
-
-//$query="SELECT * FROM materias";
-//$query="insert into materias values ('$id_materia','$nombre_materia','$profesor','$grupo','$ciclo')";
-//$resultado=mysql_query($query) or die(mysql_error());
-
-
-
-//$query1="UPDATE calificaciones SET id_materia='$id_materia' WHERE grupo_materia LIKE '$grupo'";
-	//$results1=mysql_query($query1)or die (mysql_error());
-
-
-
-
 ?>
+<div align="center">
+
+
 <script language="javascript"> alert("REGISTRO COMPLETO");
 	document.location.href="inicio.php";
 	</script>
-</body>
-</html>
+
+
+ </div>     
+<?php
+	include("master_segundocontenido2.php");
+	include("master_piepagina.php");
+?>
+

@@ -5,8 +5,7 @@ $uno=$_POST['nombre'];
 $dos=$_POST['email'];
 $tres=$_POST['asunto'];
 $cuatro=$_POST['comentarios'];
-$connect=mysql_connect("localhost","root","")or die("no se conecto");
-mysql_select_db("paginahms");
+include("master_db.php");
 
 if($uno!=NULL && $dos!=NULL && $tres!=NULL && $cuatro!=NULL)
 {
