@@ -6,24 +6,20 @@
 	include("master_segundocontenido1.php");
 
 		$id=$_REQUEST['id'];
-	$titulo=$_REQUEST['titulo'];
 	$nombre=$_REQUEST['nombre'];
-	$apellido=$_REQUEST['apellido'];
-	$especialidad=$_REQUEST['especialidad'];
-	$telefono=$_REQUEST['telefono'];
-	$email=$_REQUEST['email'];
-	$descripcion=$_REQUEST['descripcion'];
+	$titulo=$_REQUEST['titulo'];
+	$corta=$_REQUEST['corta'];
+	$larga=$_REQUEST['larga'];
 ?>
 
 <div align="center">
- <form id="form1" method="post" action="nuevanoticia2.php" enctype="multipart/form-data">
+ <form id="form1" method="post" action="modificarnoticias2.php" enctype="multipart/form-data">
                               
-                                	<label>Titulo<input type="text" name="titulo" id="titulo"/></label>
-                                    <label>Descripción corta<input type="text" name="corta" id="corta" /></label>
-                                    <textarea name="larga" id="larga" rows="10" placeholder="Escriba aqui la noticia completa" cols="100"></textarea>
+                                	<label>Id<input type="text" name="id" id="id" value="<?php echo $id;?>"/></label>
+                                    <label>Titulo<input type="text" name="titulo" id="titulo" value="<?php echo $titulo;?>"/></label>
+                                    <label>Descripción corta<input type="text" name="corta" id="corta" value="<?php echo $corta;?>"/></label>
+                                    <textarea name="larga" id="larga" rows="10" placeholder="Escriba aqui la noticia completa" cols="100"><?php echo $larga;?></textarea>
                                     <br />
-                                        <input id="imagen" name="imagen" size="30" type="file" />
- 
                                     <br />
                                     <input type="submit" name="guardar" id="guardar" value="Guardar Cambios"/>
 <?php 
